@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <h1>FAMILY BOOK</h1>
+    </head>
+
+
+    <body>
+        <img width="300" height="400" id="album" src="me.png">
+        <li id="nme">Dibyansh</li>
+        <p><button type="button" onclick="nextslide()">next</button></p>
+    </body>
+
+    
+
+    <script>
+        var pict = [
+            "father.png",
+            "mother.png" 
+        ];
+        var dis = [
+            "Father",
+            "Mother"
+        ];
+        var i = 0;
+        function nextslide(){
+            if(i == 3)
+        {
+            i = 0;
+        }
+         document.getElementById("nme").innerHTML=dis[i] ;
+         document.getElementById("album").src=pict[i];
+        i++;
+    }
+   </script>
+</html>
